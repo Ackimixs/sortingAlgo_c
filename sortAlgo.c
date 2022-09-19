@@ -1,5 +1,5 @@
 #include "sortAlgo.h"
-
+//Algorithm
 void bubbleSort(int *array, int size) {
     for (int i = 0; i < size - 1; i++) {
         for (int j = 0 ; j < size - i - 1; j++) {
@@ -8,19 +8,6 @@ void bubbleSort(int *array, int size) {
             }
         }
     }
-}
-
-void swap(int *array, int i, int j) {
-    int temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-}
-
-void printArray(int *array, int size) {
-    for (int i = 0; i < size - 1; i++) {
-        printf("%d, ", array[i]);
-    }
-    printf("%d", array[size-1]);
 }
 
 void selectionSort(int *array, int size) {
@@ -82,7 +69,6 @@ void countingSort(int *array, int size) {
 
 void heapSort(int *array, int size) {
 
-    //First Tas
     for (int i = size / 2 - 1; i >= 0; i--) {
         heap(array, size, i);
     }
@@ -112,6 +98,68 @@ void heap(int *array, int size, int index) {
     };
 }
 
+//Utility function
+void swap(int *array, int i, int j) {
+    int temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+}
+
+void printArray(int *array, int size) {
+    for (int i = 0; i < size - 1; i++) {
+        printf("%d, ", array[i]);
+    }
+    printf("%d", array[size-1]);
+}
+
+bool isSorted(int *array, int size) {
+    for (int i = 0; i < size - 1; i++) {
+        if (array[i] > array[i+1]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int getMax(int *array, int size) {
+    int max = array[0];
+    for (int i = 1; i < size; i++) {
+        if (max < array[i]) {
+            max = array[i];
+        }
+    }
+    return max;
+}
+
+
+//Setter part
+void randomizeArray(int *array, int size) {
+    for (int i = 0; i < size; i++) {
+        array[i] = rand() % 100000;
+    }
+}
+
+void descendingOrder(int *array, int size) {
+    for (int i = 0; i < size; i++) {
+        array[i] = size - i;
+    }
+}
+
+void ascendingOrder(int *array, int size) {
+    for (int i = 0; i < size; i++) {
+        array[i] = i;
+    }
+}
+
+
+//Execution part
+/**
+ * @param sort
+ * @param array
+ * @param size
+ * @param baseSortType
+ * @return the execution time of the algorithm
+ */
 double getExecutionTime(sortAlgo sort, int *array, int size, sortAlgo baseSortType) {
     struct timespec start;
     struct timespec end;
@@ -143,7 +191,7 @@ void runFunction(sortAlgo sort, FILE *file) {
     double time_spent = 0.0;
     int numberOfTests = 10;
 
-    for (int i = 1; i <= 50; i++) {
+    for (int i = 1; i <= 5; i++) {
         n = i * 500;
 
         arr = malloc(n * sizeof(int));
@@ -164,43 +212,10 @@ void runFunction(sortAlgo sort, FILE *file) {
     }
 }
 
-void randomizeArray(int *array, int size) {
-    for (int i = 0; i < size; i++) {
-        array[i] = rand() % 100000;
-    }
-}
-
-void descendingOrder(int *array, int size) {
-    for (int i = 0; i < size; i++) {
-        array[i] = size - i;
-    }
-}
-
-void ascendingOrder(int *array, int size) {
-    for (int i = 0; i < size; i++) {
-        array[i] = i;
-    }
-}
-
-bool isSorted(int *array, int size) {
-    for (int i = 0; i < size - 1; i++) {
-        if (array[i] > array[i+1]) {
-            return false;
-        }
-    }
-    return true;
-}
-
-int getMax(int *array, int size) {
-    int max = array[0];
-    for (int i = 1; i < size; i++) {
-        if (max < array[i]) {
-            max = array[i];
-        }
-    }
-    return max;
-}
-
+/**
+ * Main testing function to know if the array after the algorithm is sorted and to have their execution time
+ * @param Size size of the array
+ */
 void testingAllFunction(int Size) {
 
     printf("-----------    TESTING  ALGORITHM     -------------\n");
@@ -222,6 +237,9 @@ void testingAllFunction(int Size) {
 
 }
 
+/**
+ * the run function that write in file and testing all the function
+ */
 void runAll() {
     printf("-----------    TESTING  ALGORITHM     -------------\n");
     printf("Bubble Sort : \n");
