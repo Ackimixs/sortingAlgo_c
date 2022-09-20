@@ -23,12 +23,14 @@ void printArray(int *array, int size);
 int getMax(int *array, int size);
 bool isSorted(int *array, int size);
 
-void runFunction(sortAlgo, FILE *file);
+void runFunction(sortAlgo, FILE *file, sortAlgo random);
 void runAll();
 double getExecutionTime(sortAlgo sort, int *array, int size, sortAlgo baseSortType);
 void randomizeArray(int *array, int size);
+void randomizeArrayBest(int *array, int size);
+void randomizeArrayNotBest(int *array, int size);
 
 void testingAllFunction(int Size);
 
-void writeFile(char *fileName, sortAlgo sort);
+void writeFile(char *fileName, sortAlgo sort, sortAlgo random);
 #endif //SORTINGALGO_SORTALGO_H

@@ -139,6 +139,18 @@ void randomizeArray(int *array, int size) {
     }
 }
 
+void randomizeArrayBest(int *array, int size) {
+    for (int i = 0; i < size; i++) {
+        array[i] = rand() % 10;
+    }
+}
+
+void randomizeArrayNotBest(int *array, int size) {
+    for (int i = 0; i < size; i++) {
+        array[i] = rand() % 100000000;
+    }
+}
+
 void descendingOrder(int *array, int size) {
     for (int i = 0; i < size; i++) {
         array[i] = size - i;
@@ -184,24 +196,26 @@ double getExecutionTime(sortAlgo sort, int *array, int size, sortAlgo baseSortTy
     return time;
 }
 
-void runFunction(sortAlgo sort, FILE *file) {
+void runFunction(sortAlgo sort, FILE *file, sortAlgo random) {
 
     int *arr;
     int n;
     double time_spent = 0.0;
     int numberOfTests = 10;
+    int maxArraySize = 50;
 
-    for (int i = 1; i <= 5; i++) {
+    for (int i = 1; i <= maxArraySize; i++) {
         n = i * 500;
 
         arr = malloc(n * sizeof(int));
 
         for (int j = 0; j < numberOfTests; j++) {
-            time_spent += getExecutionTime(sort, arr, n, randomizeArray);
+            time_spent += getExecutionTime(sort, arr, n, random);
         }
 
         time_spent = time_spent / numberOfTests;
         if (file != NULL) {
+            //printf("Done for : %d value\n", n);
             fprintf(file, "%d;%f\n", n, 1000 * time_spent); // in milliseconds
         }
         else {
@@ -243,18 +257,24 @@ void testingAllFunction(int Size) {
 void runAll() {
     printf("-----------    TESTING  ALGORITHM     -------------\n");
     printf("Bubble Sort : \n");
-    writeFile("bubble_sort", bubbleSort);
-    printf("\n\n");
+    //writeFile("bubble_sort", bubbleSort, randomizeArray);
+    printf("bubble sort finished\n");
     printf("Heap Sort : \n");
-    writeFile("heap_sort", heapSort);
-    printf("\n\n");
+    writeFile("heap_sort", heapSort, randomizeArray);
+    printf("heap sort finished\n");
     printf("Counting Sort : \n");
-    writeFile("counting_sort", countingSort);
-    printf("\nEND");
+    writeFile("counting_sort", countingSort, randomizeArray);
+    printf("Counting Sort finished\n");
+    printf("Counting sort best\n");
+    writeFile("counting_sort_best", countingSort, randomizeArrayBest);
+    printf("counting sort best finished\n");
+    printf("Coutning sort not best :\n");
+    writeFile("counting_sort_not_best", countingSort, randomizeArrayNotBest);
+    printf("Counting sort not best finished\n");
 }
 
 
-void writeFile(char *fileName, sortAlgo sort) {
+void writeFile(char *fileName, sortAlgo sort, sortAlgo random) {
     FILE *file = fopen(fileName, "w");
 
     if (file == NULL) {
@@ -262,7 +282,7 @@ void writeFile(char *fileName, sortAlgo sort) {
         exit(1);
     }
 
-    runFunction(sort, file);
+    runFunction(sort, file, random);
 
     fclose(file);
 }
