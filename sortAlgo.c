@@ -10,6 +10,21 @@ void bubbleSort(int *array, int size) {
     }
 }
 
+void bubbleSortV2(int *array, int size) {
+    for (int i = 0; i < size - 1; i++) {
+        bool sorted = false;
+        for (int j = 0 ; j < size - i - 1; j++) {
+            if (array[j] > array[j+1]) {
+                sorted = true;
+                swap(array, j, j+1);
+            }
+        }
+        if (sorted == false) {
+            return;
+        }
+    }
+}
+
 void selectionSort(int *array, int size) {
     int minIndex;
     for (int i = 0; i < size - 1; i++) {
@@ -213,7 +228,7 @@ void runFunction(sortAlgo sort, FILE *file, sortAlgo random) {
     int n;
     double time_spent = 0.0;
     int numberOfTests = 10;
-    int maxArraySize = 25;
+    int maxArraySize = 50;
 
     for (int i = 1; i <= maxArraySize; i++) {
         n = i * 500;
@@ -267,21 +282,50 @@ void testingAllFunction(int Size) {
  */
 void runAll() {
     printf("-----------    TESTING  ALGORITHM     -------------\n");
+
+    //random
     printf("Bubble Sort : \n");
     //writeFile("bubble_sort.csv", bubbleSort, randomizeArray);
     printf("bubble sort finished\n");
+
+
+    //random V2
+    printf("Bubble Sort V2: \n");
+    writeFile("bubble_sort.csv", bubbleSortV2, randomizeArray);
+    printf("bubble sort V2 finished\n");
+
+
+    // croissant
+    printf("Bubble Sort V2 croissant: \n");
+    writeFile("bubble_sort_croissant.csv", bubbleSortV2, ascendingOrder);
+    printf("bubble sort croissant finished\n");
+
+
+    //decroissant
+    printf("Bubble Sort V2 decroissant : \n");
+    writeFile("bubble_sort_decroissant.csv", bubbleSortV2, descendingOrder);
+    printf("bubble sort decroissant finished\n");
+
+
+
     printf("Heap Sort : \n");
     //writeFile("heap_sort.csv", heapSort, randomizeArray);
     printf("heap sort finished\n");
+
+
+
     printf("Counting Sort : \n");
-    writeFile("counting_sort.csv", countingSort, randomizeArray);
+    //writeFile("counting_sort.csv", countingSort, randomizeArray);
     printf("Counting Sort finished\n");
-    printf("Counting sort best\n");
+
+
+
+    /*printf("Counting sort best\n");
     //writeFile("counting_sort_best.csv", countingSort, randomizeArrayBest);
     printf("counting sort best finished\n");
     printf("Coutning sort not best :\n");
     //writeFile("counting_sort_not_best.csv", countingSort, randomizeArrayNotBest);
-    printf("Counting sort not best finished\n");
+    printf("Counting sort not best finished\n");*/
 }
 
 

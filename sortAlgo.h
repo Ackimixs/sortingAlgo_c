@@ -10,6 +10,7 @@
 typedef void (*sortAlgo)(int* , int );
 
 void bubbleSort(int *array, int size);
+void bubbleSortV2(int *array, int size);
 void selectionSort(int *array, int size);
 void insertionSort(int *array, int size);
 void countingSort(int *array, int size);
@@ -28,9 +29,11 @@ void runFunction(sortAlgo, FILE *file, sortAlgo random);
 void runAll();
 double getExecutionTime(sortAlgo sort, int *array, int size, sortAlgo baseSortType);
 void randomizeArray(int *array, int size);
-void randomizeArraySizeSize(int *array, int size)
+void randomizeArraySizeSize(int *array, int size);
 void randomizeArrayBest(int *array, int size);
 void randomizeArrayNotBest(int *array, int size);
+void descendingOrder(int *array, int size);
+void ascendingOrder(int *array, int size);
 
 void testingAllFunction(int Size);
 
