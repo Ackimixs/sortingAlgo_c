@@ -291,19 +291,19 @@ void runAll() {
 
     //random V2
     printf("Bubble Sort V2: \n");
-    writeFile("bubble_sort.csv", bubbleSortV2, randomizeArray);
+    writeFile("bubble_sortV2.csv", bubbleSortV2, randomizeArray);
     printf("bubble sort V2 finished\n");
 
 
     // croissant
     printf("Bubble Sort V2 croissant: \n");
-    writeFile("bubble_sort_croissant.csv", bubbleSortV2, ascendingOrder);
+    writeFile("bubble_sort_croissantV2.csv", bubbleSortV2, ascendingOrder);
     printf("bubble sort croissant finished\n");
 
 
     //decroissant
     printf("Bubble Sort V2 decroissant : \n");
-    writeFile("bubble_sort_decroissant.csv", bubbleSortV2, descendingOrder);
+    writeFile("bubble_sort_decroissantV2.csv", bubbleSortV2, descendingOrder);
     printf("bubble sort decroissant finished\n");
 
 
