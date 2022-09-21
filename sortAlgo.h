@@ -17,6 +17,7 @@ void countingSort(int *array, int size);
 void heapSort(int *array, int size);
 void heap(int *array, int size, int index);
 
+void bogoSort(int *array, int size);
 
 void swap(int *array, int i, int j);
 void printArray(int *array, int size);
@@ -27,6 +28,7 @@ void runFunction(sortAlgo, FILE *file, sortAlgo random);
 void runAll();
 double getExecutionTime(sortAlgo sort, int *array, int size, sortAlgo baseSortType);
 void randomizeArray(int *array, int size);
+void randomizeArraySizeSize(int *array, int size)
 void randomizeArrayBest(int *array, int size);
 void randomizeArrayNotBest(int *array, int size);
 

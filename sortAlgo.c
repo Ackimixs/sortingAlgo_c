@@ -38,33 +38,28 @@ void insertionSort(int *array, int size) {
 
 void countingSort(int *array, int size) {
     int max = getMax(array, size);
+    int *count = (int *)calloc(max + 1, sizeof(int));
+    int *output = (int *)malloc(size * sizeof(int));
 
-    int *arr = malloc((max+1)*sizeof(int));
-
-    for (int l = 0; l < max+1; l++) {
-        arr[l] = 0;
+    for (int i = 0; i < size; i++) {
+        count[array[i]]++;
     }
 
-    for (int i = 0 ; i < size; i++) {
-        arr[array[i]]++;
+    for (int i = 1; i <= max; i++) {
+        count[i] += count[i-1];
     }
 
-    int output[size];
-    int index = 0;
-
-    for (int j = 0; j < max+1; j++) {
-        while(arr[j] > 0) {
-            output[index] = j;
-            arr[j]--;
-            index++;
-        }
+    for (int i = size - 1; i >= 0; i--) {
+        output[count[array[i]] - 1] = array[i];
+        count[array[i]]--;
     }
 
-    for (int k = 0; k < size; k++) {
-        array[k] = output[k];
+    for (int i = 0; i < size; i++) {
+        array[i] = output[i];
     }
 
-    free(arr);
+    free(count);
+    free(output);
 }
 
 void heapSort(int *array, int size) {
@@ -97,6 +92,16 @@ void heap(int *array, int size, int index) {
         heap(array, size, largerIndex);
     };
 }
+
+void bogoSort(int *array, int size) {
+    while (!isSorted(array, size)) {
+        for (int i = 0 ; i < size; i++) {
+            int j = rand() % size;
+            swap(array, i, j);
+        }
+    }
+}
+
 
 //Utility function
 void swap(int *array, int i, int j) {
@@ -139,6 +144,12 @@ void randomizeArray(int *array, int size) {
     }
 }
 
+void randomizeArraySizeSize(int *array, int size) {
+    for (int i = 0; i < size; i++) {
+        array[i] = rand() % size*size;
+    }
+}
+
 void randomizeArrayBest(int *array, int size) {
     for (int i = 0; i < size; i++) {
         array[i] = rand() % 10;
@@ -147,7 +158,7 @@ void randomizeArrayBest(int *array, int size) {
 
 void randomizeArrayNotBest(int *array, int size) {
     for (int i = 0; i < size; i++) {
-        array[i] = rand() % 100000000;
+        array[i] = rand() % 1000000;
     }
 }
 
@@ -202,7 +213,7 @@ void runFunction(sortAlgo sort, FILE *file, sortAlgo random) {
     int n;
     double time_spent = 0.0;
     int numberOfTests = 10;
-    int maxArraySize = 50;
+    int maxArraySize = 25;
 
     for (int i = 1; i <= maxArraySize; i++) {
         n = i * 500;
@@ -215,7 +226,7 @@ void runFunction(sortAlgo sort, FILE *file, sortAlgo random) {
 
         time_spent = time_spent / numberOfTests;
         if (file != NULL) {
-            //printf("Done for : %d value\n", n);
+            printf("Done for : %d value\n", n);
             fprintf(file, "%d;%f\n", n, 1000 * time_spent); // in milliseconds
         }
         else {
@@ -257,19 +268,19 @@ void testingAllFunction(int Size) {
 void runAll() {
     printf("-----------    TESTING  ALGORITHM     -------------\n");
     printf("Bubble Sort : \n");
-    //writeFile("bubble_sort", bubbleSort, randomizeArray);
+    //writeFile("bubble_sort.csv", bubbleSort, randomizeArray);
     printf("bubble sort finished\n");
     printf("Heap Sort : \n");
-    writeFile("heap_sort", heapSort, randomizeArray);
+    //writeFile("heap_sort.csv", heapSort, randomizeArray);
     printf("heap sort finished\n");
     printf("Counting Sort : \n");
-    writeFile("counting_sort", countingSort, randomizeArray);
+    writeFile("counting_sort.csv", countingSort, randomizeArray);
     printf("Counting Sort finished\n");
     printf("Counting sort best\n");
-    writeFile("counting_sort_best", countingSort, randomizeArrayBest);
+    //writeFile("counting_sort_best.csv", countingSort, randomizeArrayBest);
     printf("counting sort best finished\n");
     printf("Coutning sort not best :\n");
-    writeFile("counting_sort_not_best", countingSort, randomizeArrayNotBest);
+    //writeFile("counting_sort_not_best.csv", countingSort, randomizeArrayNotBest);
     printf("Counting sort not best finished\n");
 }
 
