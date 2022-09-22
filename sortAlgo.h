@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <limits.h>
+#include <math.h>
 
 #ifndef SORTINGALGO_SORTALGO_H
 #define SORTINGALGO_SORTALGO_H
@@ -28,8 +29,10 @@ bool isSorted(int *array, int size);
 void runFunction(sortAlgo, FILE *file, sortAlgo random);
 void runAll();
 double getExecutionTime(sortAlgo sort, int *array, int size, sortAlgo baseSortType);
+
 void randomizeArray(int *array, int size);
 void randomizeArraySizeSize(int *array, int size);
+void randomizeArrayLog(int *array, int size);
 void randomizeArrayBest(int *array, int size);
 void randomizeArrayNotBest(int *array, int size);
 void descendingOrder(int *array, int size);

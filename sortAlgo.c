@@ -155,19 +155,29 @@ int getMax(int *array, int size) {
 //Setter part
 void randomizeArray(int *array, int size) {
     for (int i = 0; i < size; i++) {
-        array[i] = rand() % 100000;
+        array[i] = rand() % 10000;
     }
 }
 
+
+//random for counting sort
 void randomizeArraySizeSize(int *array, int size) {
     for (int i = 0; i < size; i++) {
         array[i] = rand() % size*size;
     }
 }
 
+
+//random for counting sort
+void randomizeArrayLog(int *array, int size) {
+    for (int i = 0; i < size; i++) {
+        array[i] = rand() % (int) (size*log(size));
+    }
+}
+
 void randomizeArrayBest(int *array, int size) {
     for (int i = 0; i < size; i++) {
-        array[i] = rand() % 10;
+        array[i] = rand() % 100;
     }
 }
 
@@ -285,47 +295,62 @@ void runAll() {
 
     //random
     printf("Bubble Sort : \n");
-    //writeFile("bubble_sort.csv", bubbleSort, randomizeArray);
+    //writeFile("/home/acki/Documents/Projet-final/bubble_sort/bubble_sort.csv", bubbleSort, randomizeArray);
     printf("bubble sort finished\n");
 
 
     //random V2
     printf("Bubble Sort V2: \n");
-    writeFile("bubble_sortV2.csv", bubbleSortV2, randomizeArray);
+    //writeFile("/home/acki/Documents/Projet-final/bubble_sort_V2/bubble_sortV2.csv", bubbleSortV2, randomizeArray);
     printf("bubble sort V2 finished\n");
 
 
-    // croissant
+    // croissant V2
     printf("Bubble Sort V2 croissant: \n");
-    writeFile("bubble_sort_croissantV2.csv", bubbleSortV2, ascendingOrder);
+    //writeFile("/home/acki/Documents/Projet-final/bubble_sort_croissant_V2/bubble_sort_croissantV2.csv", bubbleSortV2, ascendingOrder);
     printf("bubble sort croissant finished\n");
 
 
-    //decroissant
+    //decroissant V2
     printf("Bubble Sort V2 decroissant : \n");
-    writeFile("bubble_sort_decroissantV2.csv", bubbleSortV2, descendingOrder);
+    //writeFile("/home/acki/Documents/Projet-final/bubble_sort_decroissant_V2/bubble_sort_decroissantV2.csv", bubbleSortV2, descendingOrder);
     printf("bubble sort decroissant finished\n");
 
 
-
+    // Heap Sort V2
     printf("Heap Sort : \n");
-    //writeFile("heap_sort.csv", heapSort, randomizeArray);
+    //writeFile("/home/acki/Documents/Projet-final/heap_sort/heap_sort.csv", heapSort, randomizeArray);
     printf("heap sort finished\n");
 
 
-
+    // Counting Sort
     printf("Counting Sort : \n");
-    //writeFile("counting_sort.csv", countingSort, randomizeArray);
+    //writeFile("/home/acki/Documents/Projet-final/counting_sort/counting_sort.csv", countingSort, randomizeArray);
     printf("Counting Sort finished\n");
 
 
-
-    /*printf("Counting sort best\n");
-    //writeFile("counting_sort_best.csv", countingSort, randomizeArrayBest);
+    // Counting Sort best
+    printf("Counting sort best\n");
+    //writeFile("/home/acki/Documents/Projet-final/counting_sort_best/counting_sort_best.csv", countingSort, randomizeArrayBest);
     printf("counting sort best finished\n");
+
+
+    // Counting Sort not best
     printf("Coutning sort not best :\n");
-    //writeFile("counting_sort_not_best.csv", countingSort, randomizeArrayNotBest);
-    printf("Counting sort not best finished\n");*/
+    //writeFile("/home/acki/Documents/Projet-final/counting_sort_not_best/counting_sort_not_best.csv", countingSort, randomizeArrayNotBest);
+    printf("Counting sort not best finished\n");
+
+
+    // Counting Sort N carré
+    printf("Counting Sort N carre : \n");
+    //writeFile("/home/acki/Documents/Projet-final/counting_sortnn/counting_sort_n_n.csv", countingSort, randomizeArraySizeSize);
+    printf("Counting Sort N carre finished\n");
+
+
+    // Counting Sort N carré
+    printf("Counting Sort N carre : \n");
+    writeFile("/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv", countingSort, randomizeArrayLog);
+    printf("Counting Sort N carre finished\n");
 }
 
 

@@ -1,0 +1,30 @@
+
+
+*******************************************************************************
+Wed Sep 21 17:00:46 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/bubble_sort_decroissant.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * x ** 2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 4.1041461178e+18   0.00e+00  2.87e+08    1.000000e+00
+   4 9.3110663104e+01  -2.71e-01  2.87e+04    2.490725e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 93.1107
+rel. change during last iteration : -2.71036e-06
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.37848
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.90022
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 2.49072e-06      +/- 6.804e-10    (0.02732%)

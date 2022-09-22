@@ -4,3 +4,4 @@ project(sortingAlgo C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(sortingAlgo main.c sortAlgo.c sortAlgo.h)
+target_link_libraries(sortingAlgo m)
