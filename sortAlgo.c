@@ -291,6 +291,8 @@ void testingAllFunction(int Size) {
  * the run function that write in file and testing all the function
  */
 void runAll() {
+    srand(time(NULL));
+
     printf("-----------    TESTING  ALGORITHM     -------------\n");
 
     //random

@@ -20,7 +20,7 @@ fit f(x) '/home/acki/Documents/Projet-final/counting_sort/counting_sort.csv' via
 
 # Save value of c to show in the function
 
-title_f(c) = sprintf("f(x) = c*(n+k)-0.95, c = %f", c)
+title_f(c) = sprintf("f(x) = c*(n+k)-0.95, c = %f, k = %f", c, k)
 
 # Automatic scaling of axes
 set autoscale xy
