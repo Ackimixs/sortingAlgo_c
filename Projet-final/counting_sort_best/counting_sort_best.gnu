@@ -19,7 +19,7 @@ fit f(x) '/home/acki/Documents/Projet-final/counting_sort_best/counting_sort_bes
 
 # Save value of c to show in the function
 
-title_f(c) = sprintf("f(x) = c*n^2, c = %f", c)
+title_f(c) = sprintf("f(x) = c*n, c = %f", c)
 
 # Automatic scaling of axes
 set autoscale xy

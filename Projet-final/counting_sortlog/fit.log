@@ -28,3 +28,303 @@ variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000921295
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
 c               = 3.20313e-05      +/- 2.928e-07    (0.9142%)
+
+
+*******************************************************************************
+Thu Sep 22 10:49:10 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * ((log(x)) + x )
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0742819429e+10   0.00e+00  1.47e+04    1.000000e+00
+   4 7.1806125915e-02  -9.20e-07  1.47e+00    3.359548e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0718061
+rel. change during last iteration : -9.19972e-12
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.038281
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00146543
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 3.35955e-05      +/- 3.693e-07    (1.099%)
+
+
+*******************************************************************************
+Thu Sep 22 10:49:40 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * ((log(x)) + x )
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0742825969e+10   0.00e+00  1.47e+04    1.000000e+00
+   4 5.5679193287e-02  -1.19e-06  1.47e+00    3.329111e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0556792
+rel. change during last iteration : -1.1864e-11
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0337092
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00113631
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 3.32911e-05      +/- 3.252e-07    (0.9769%)
+
+
+*******************************************************************************
+Thu Sep 22 10:49:50 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * ((log(x)) + x )
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0742833013e+10   0.00e+00  1.47e+04    1.000000e+00
+   4 5.1513654954e-02  -1.28e-06  1.47e+00    3.296325e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0515137
+rel. change during last iteration : -1.28236e-11
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0324237
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0010513
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 3.29633e-05      +/- 3.128e-07    (0.949%)
+
+
+*******************************************************************************
+Thu Sep 22 10:50:12 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * ((log(x)) + x )
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0742824859e+10   0.00e+00  1.47e+04    1.000000e+00
+   4 3.3543717410e-01  -1.97e-07  1.47e+00    3.334278e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.335437
+rel. change during last iteration : -1.96932e-12
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0827385
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00684566
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 3.33428e-05      +/- 7.982e-07    (2.394%)
+
+
+*******************************************************************************
+Thu Sep 22 10:50:40 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * ((log(x)) + x )
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0742828845e+10   0.00e+00  1.47e+04    1.000000e+00
+   4 3.2824437842e-01  -2.01e-07  1.47e+00    3.315724e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.328244
+rel. change during last iteration : -2.01247e-12
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0818466
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00669886
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 3.31572e-05      +/- 7.896e-07    (2.381%)
+
+
+*******************************************************************************
+Thu Sep 22 10:50:44 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * ((log(x)) + x )
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0742828428e+10   0.00e+00  1.47e+04    1.000000e+00
+   4 3.0808426640e-01  -2.14e-07  1.47e+00    3.317669e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.308084
+rel. change during last iteration : -2.14416e-12
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0792933
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00628743
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 3.31767e-05      +/- 7.65e-07     (2.306%)
+
+
+*******************************************************************************
+Thu Sep 22 10:50:50 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * ((log(x)) + x )
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0742822617e+10   0.00e+00  1.47e+04    1.000000e+00
+   4 3.3616778954e-01  -1.97e-07  1.47e+00    3.344711e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.336168
+rel. change during last iteration : -1.96504e-12
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0828285
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00686057
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 3.34471e-05      +/- 7.991e-07    (2.389%)
+
+
+*******************************************************************************
+Thu Sep 22 10:51:12 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * ((log(x)) + x )
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0742760689e+10   0.00e+00  1.47e+04    1.000000e+00
+   4 3.3863352131e-01  -1.95e-07  1.47e+00    3.632932e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.338634
+rel. change during last iteration : -1.95073e-12
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0831318
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00691089
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 3.63293e-05      +/- 8.02e-07     (2.208%)
+
+
+*******************************************************************************
+Sat Sep 24 17:46:43 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * ((log(x)) + x )
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0742839480e+10   0.00e+00  1.47e+04    1.000000e+00
+   4 4.6740516140e-02  -1.41e-06  1.47e+00    3.266227e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0467405
+rel. change during last iteration : -1.41328e-11
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0308851
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000953888
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 3.26623e-05      +/- 2.98e-07     (0.9123%)
+
+
+*******************************************************************************
+Sat Sep 24 17:48:14 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * ((log(x)) + x )
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0742839480e+10   0.00e+00  1.47e+04    1.000000e+00
+   4 4.6740516140e-02  -1.41e-06  1.47e+00    3.266227e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0467405
+rel. change during last iteration : -1.41328e-11
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0308851
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000953888
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 3.26623e-05      +/- 2.98e-07     (0.9123%)

@@ -1,3 +1,5 @@
 for dir in */; do
-    gnuplot $dir/*.gnu -psersist
+	cd $dir
+    gnuplot *.gnu
+	cd ..
 done
