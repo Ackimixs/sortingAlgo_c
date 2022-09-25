@@ -175,6 +175,18 @@ void randomizeArrayLog(int *array, int size) {
     }
 }
 
+void randomizeArrayLogN(int *array, int size) {
+    for (int i = 0; i < size; i++) {
+        array[i] = rand() % ((size * (int) (log(size))) - size);
+    }
+}
+
+void randomizeArraySizeSizeN(int *array, int size) {
+    for (int i = 0; i < size; i++) {
+        array[i] = rand() % ((size*size)-size);
+    }
+}
+
 void randomizeArrayBest(int *array, int size) {
     for (int i = 0; i < size; i++) {
         array[i] = rand() % 100;
@@ -237,7 +249,7 @@ void runFunction(sortAlgo sort, FILE *file, sortAlgo random) {
     int *arr;
     int n;
     double time_spent = 0.0;
-    int numberOfTests = 25;
+    int numberOfTests = 10;
     int maxArraySize = 50;
 
     for (int i = 1; i <= maxArraySize; i++) {
@@ -351,8 +363,18 @@ void runAll() {
 
     // Counting Sort N log(n)
     printf("Counting Sort N log(n) : \n");
-    writeFile("/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv", countingSort, randomizeArrayLog);
+    //writeFile("/home/acki/Documents/Projet-final/counting_sortlog/counting_sort_log.csv", countingSort, randomizeArrayLog);
     printf("Counting Sort N log(n) finished\n");
+
+    // Counting Sort N log(n) - n
+    printf("Counting Sort N log(n) - n : \n");
+    writeFile("/home/acki/Documents/Projet-final/counting_sortlogN/counting_sort_log_n.csv", countingSort, randomizeArrayLogN);
+    printf("Counting Sort N log(n) - n finished\n");
+
+    // Counting Sort N log(n) - n
+    printf("Counting Sort N carre - n : \n");
+    //writeFile("/home/acki/Documents/Projet-final/counting_sortnnn/counting_sort_n_n_n.csv", countingSort, randomizeArraySizeSizeN);
+    printf("Counting Sort N carre - n finished\n");
 }
 
 
