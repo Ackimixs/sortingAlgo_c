@@ -7,7 +7,9 @@ int main() {
 
     //comparHeapCounting();
 
-    compareAll();
+    //compareAll();
+
+    writeAll();
 
     return 0;
 }

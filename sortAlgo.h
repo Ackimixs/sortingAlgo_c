@@ -54,4 +54,6 @@ void compareHeapCountingBest();
 void compareHeapCountingNormal();
 void compareCountingNotBestBubble();
 void compareCountingWorstBubbleWorstBubbleNormal();
+
+void writeAll();
 #endif //SORTINGALGO_SORTALGO_H

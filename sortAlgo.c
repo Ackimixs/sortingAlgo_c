@@ -420,8 +420,8 @@ void comparHeapCounting() {
 
 void compareAll() {
     compareHeapCountingBest();
-    //compareHeapCountingNormal();
-    //compareCountingNotBestBubble();
+    compareHeapCountingNormal();
+    compareCountingNotBestBubble();
     //compareCountingWorstBubbleWorstBubbleNormal();
 }
 
@@ -432,7 +432,7 @@ void compareHeapCountingBest() {
 
     //random
     printf("Compare Sort 1 : \n");
-    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkHeapCountingBest/heap_sort.csv", heapSort, descendingOrder);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkHeapCountingBest/heap_sort.csv", heapSort, randomizeArray);
     writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkHeapCountingBest/counting_sort.csv", countingSort, randomizeArrayBest);
     system("cd /home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkHeapCountingBest && gnuplot *.gnu -persist");
     printf("Compare 1 finished\n");
@@ -473,8 +473,34 @@ void compareCountingWorstBubbleWorstBubbleNormal() {
     //random
     printf("Compare Sort 5 : \n");
     writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingWorstBubbleWorstBubbleNormal/counting_sort.csv", countingSort, randomizeArrayNotBest);
-    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingWorstBubbleWorstBubbleNormal/bubble_sort_worst.csv", bubbleSort, descendingOrder);
-    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingWorstBubbleWorstBubbleNormal/bubble_sort.csv", bubbleSort, randomizeArray);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingWorstBubbleWorstBubbleNormal/bubble_sort_worst.csv", bubbleSortV2, descendingOrder);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingWorstBubbleWorstBubbleNormal/bubble_sort.csv", bubbleSortV2, randomizeArray);
     system("cd /home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingWorstBubbleWorstBubbleNormal && gnuplot *.gnu -persist");
     printf("Compare 5 finished\n");
+}
+
+
+
+
+
+
+void autoTesting() {
+
+}
+
+void writeAll() {
+    srand(time(NULL));
+
+    printf("-----------    TESTING  ALGORITHM     -------------\n");
+
+    //writeFile("/home/acki/CLionProjects/sortingAlgo/testingAll/bubble_sort.csv", bubbleSort, randomizeArray);
+    //writeFile("/home/acki/CLionProjects/sortingAlgo/testingAll/bubbleV2_sort.csv", bubbleSortV2, randomizeArray);
+    //writeFile("/home/acki/CLionProjects/sortingAlgo/testingAll/bubbleV2_ascending_sort.csv", bubbleSortV2, ascendingOrder);
+    //writeFile("/home/acki/CLionProjects/sortingAlgo/testingAll/bubbleV2_descending_sort.csv", bubbleSortV2, descendingOrder);
+    //writeFile("/home/acki/CLionProjects/sortingAlgo/testingAll/heap_sort.csv", heapSort, randomizeArray);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/testingAll/counting_sort.csv", countingSort, randomizeArray);
+    //writeFile("/home/acki/CLionProjects/sortingAlgo/testingAll/counting_best_sort.csv", countingSort, randomizeArrayBest);
+    //writeFile("/home/acki/CLionProjects/sortingAlgo/testingAll/counting_worst_sort.csv", countingSort, randomizeArrayNotBest);
+    //writeFile("/home/acki/CLionProjects/sortingAlgo/testingAll/counting_logn_sort.csv", countingSort, randomizeArrayLog);
+    //writeFile("/home/acki/CLionProjects/sortingAlgo/testingAll/counting_nn_sort.csv", countingSort, randomizeArraySizeSize);
 }
