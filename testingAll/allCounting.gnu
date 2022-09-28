@@ -16,4 +16,4 @@ set autoscale xy
 
 
 #### Plot both data and function (data with points)
- plot '/home/acki/CLionProjects/sortingAlgo/testingAll/counting_sort.csv' title 'counting sort', '/home/acki/CLionProjects/sortingAlgo/testingAll/counting_best_sort.csv' title 'bubble best sort', '/home/acki/CLionProjects/sortingAlgo/testingAll/counting_logn_sort.csv' title 'counting log ascending sort',  '/home/acki/CLionProjects/sortingAlgo/testingAll/counting_nn_sort.csv' title 'counting n² sort',  '/home/acki/CLionProjects/sortingAlgo/testingAll/counting_worst_sort.csv' title 'counting worst sort'
+ plot '/home/acki/CLionProjects/sortingAlgo/testingAll/counting_sort.csv' title 'counting sort', '/home/acki/CLionProjects/sortingAlgo/testingAll/counting_best_sort.csv' title 'counting best sort', '/home/acki/CLionProjects/sortingAlgo/testingAll/counting_logn_sort.csv' title 'counting log ascending sort',  '/home/acki/CLionProjects/sortingAlgo/testingAll/counting_nn_sort.csv' title 'counting n² sort',  '/home/acki/CLionProjects/sortingAlgo/testingAll/counting_worst_sort.csv' title 'counting worst sort'
