@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <limits.h>
 #include <math.h>
+#include <string.h>
 
 #ifndef SORTINGALGO_SORTALGO_H
 #define SORTINGALGO_SORTALGO_H
@@ -41,4 +42,16 @@ void ascendingOrder(int *array, int size);
 void testingAllFunction(int Size);
 
 void writeFile(char *fileName, sortAlgo sort, sortAlgo random);
+
+
+//COMPARE ALGO
+void comparBubble();
+void comparHeapCounting();
+
+
+void compareAll();
+void compareHeapCountingBest();
+void compareHeapCountingNormal();
+void compareCountingNotBestBubble();
+void compareCountingWorstBubbleWorstBubbleNormal();
 #endif //SORTINGALGO_SORTALGO_H

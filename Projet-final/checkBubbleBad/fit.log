@@ -1,0 +1,686 @@
+
+
+*******************************************************************************
+Tue Sep 27 12:45:48 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/counting_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a * (x+x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 4.2924505501e+10   0.00e+00  2.93e+04    1.000000e+00
+   4 1.8015558278e-03  -1.47e-04  2.93e+00    5.760051e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.00180156
+rel. change during last iteration : -1.46508e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00606353
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.67664e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 5.76005e-06      +/- 2.927e-08    (0.5081%)
+
+
+*******************************************************************************
+Tue Sep 27 12:45:48 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/bubble_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = b * (x**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b            
+   0 4.1041467022e+18   0.00e+00  2.87e+08    1.000000e+00
+   4 9.0160121731e+03  -2.80e-03  2.87e+04    2.419537e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 9016.01
+rel. change during last iteration : -2.79906e-08
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 13.5647
+variance of residuals (reduced chisquare) = WSSR/ndf   : 184
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+b               = 2.41954e-06      +/- 6.696e-09    (0.2767%)
+
+
+*******************************************************************************
+Tue Sep 27 12:45:48 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/heap_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: h(x)
+	h(x) = c * x * log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0324592738e+12   0.00e+00  1.44e+05    1.000000e+00
+   4 1.3130852968e-02  -4.83e-04  1.44e+01    1.364181e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0131309
+rel. change during last iteration : -4.83486e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.01637
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000267977
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 1.36418e-05      +/- 1.611e-08    (0.1181%)
+
+
+*******************************************************************************
+Tue Sep 27 12:47:11 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/counting_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a * (x+x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 4.2924505501e+10   0.00e+00  2.93e+04    1.000000e+00
+   4 1.8015558278e-03  -1.47e-04  2.93e+00    5.760051e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.00180156
+rel. change during last iteration : -1.46508e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00606353
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.67664e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 5.76005e-06      +/- 2.927e-08    (0.5081%)
+
+
+*******************************************************************************
+Tue Sep 27 12:47:11 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/bubble_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = b * (x**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b            
+   0 4.1041467022e+18   0.00e+00  2.87e+08    1.000000e+00
+   4 9.0160121731e+03  -2.80e-03  2.87e+04    2.419537e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 9016.01
+rel. change during last iteration : -2.79906e-08
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 13.5647
+variance of residuals (reduced chisquare) = WSSR/ndf   : 184
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+b               = 2.41954e-06      +/- 6.696e-09    (0.2767%)
+
+
+*******************************************************************************
+Tue Sep 27 12:47:11 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/heap_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: h(x)
+	h(x) = c * x * log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0324592738e+12   0.00e+00  1.44e+05    1.000000e+00
+   4 1.3130852968e-02  -4.83e-04  1.44e+01    1.364181e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0131309
+rel. change during last iteration : -4.83486e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.01637
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000267977
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 1.36418e-05      +/- 1.611e-08    (0.1181%)
+
+
+*******************************************************************************
+Tue Sep 27 12:48:48 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/counting_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a * (x+x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 4.2924505501e+10   0.00e+00  2.93e+04    1.000000e+00
+   4 1.8015558278e-03  -1.47e-04  2.93e+00    5.760051e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.00180156
+rel. change during last iteration : -1.46508e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00606353
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.67664e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 5.76005e-06      +/- 2.927e-08    (0.5081%)
+
+
+*******************************************************************************
+Tue Sep 27 12:48:48 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/bubble_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = b * (x**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b            
+   0 4.1041467022e+18   0.00e+00  2.87e+08    1.000000e+00
+   4 9.0160121731e+03  -2.80e-03  2.87e+04    2.419537e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 9016.01
+rel. change during last iteration : -2.79906e-08
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 13.5647
+variance of residuals (reduced chisquare) = WSSR/ndf   : 184
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+b               = 2.41954e-06      +/- 6.696e-09    (0.2767%)
+
+
+*******************************************************************************
+Tue Sep 27 12:48:48 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/heap_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: h(x)
+	h(x) = c * x * log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0324592738e+12   0.00e+00  1.44e+05    1.000000e+00
+   4 1.3130852968e-02  -4.83e-04  1.44e+01    1.364181e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0131309
+rel. change during last iteration : -4.83486e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.01637
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000267977
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 1.36418e-05      +/- 1.611e-08    (0.1181%)
+
+
+*******************************************************************************
+Tue Sep 27 13:04:18 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/counting_sort.csv'
+        format = z
+        x range restricted to [0.00000 : 10000.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a * (x+x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 2.8699688711e+09   0.00e+00  1.20e+04    1.000000e+00
+   4 4.8194119194e-05  -8.43e-02  1.20e+00    5.423175e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 4.81941e-05
+rel. change during last iteration : -8.43113e-07
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00159265
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.53653e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 5.42317e-06      +/- 2.973e-08    (0.5482%)
+
+
+*******************************************************************************
+Tue Sep 27 13:04:18 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/bubble_sort.csv'
+        format = z
+        x range restricted to [0.00000 : 10000.0]
+BREAK: No data to fit
+
+*******************************************************************************
+Tue Sep 27 13:04:36 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/counting_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a * (x+x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 4.2924505501e+10   0.00e+00  2.93e+04    1.000000e+00
+   4 1.8015558278e-03  -1.47e-04  2.93e+00    5.760051e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.00180156
+rel. change during last iteration : -1.46508e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00606353
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.67664e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 5.76005e-06      +/- 2.927e-08    (0.5081%)
+
+
+*******************************************************************************
+Tue Sep 27 13:04:36 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/bubble_sort.csv'
+        format = z
+BREAK: No data to fit
+
+*******************************************************************************
+Tue Sep 27 13:04:55 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/counting_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a * (x+x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 4.2924505501e+10   0.00e+00  2.93e+04    1.000000e+00
+   4 1.8015558278e-03  -1.47e-04  2.93e+00    5.760051e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.00180156
+rel. change during last iteration : -1.46508e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00606353
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.67664e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 5.76005e-06      +/- 2.927e-08    (0.5081%)
+
+
+*******************************************************************************
+Tue Sep 27 13:04:55 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/bubble_sort.csv'
+        format = z
+BREAK: No data to fit
+
+*******************************************************************************
+Tue Sep 27 13:13:23 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/counting_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a * (x+x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 4.2924515682e+10   0.00e+00  2.93e+04    1.000000e+00
+   4 1.8061273993e-03  -1.46e-04  2.93e+00    5.641465e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.00180613
+rel. change during last iteration : -1.46137e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00607122
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.68597e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 5.64146e-06      +/- 2.93e-08     (0.5194%)
+
+
+*******************************************************************************
+Tue Sep 27 13:13:23 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/bubble_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = b * (x**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b            
+   0 4.1041470994e+18   0.00e+00  2.87e+08    1.000000e+00
+   4 1.4961885419e+03  -1.69e-02  2.87e+04    2.371148e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1496.19
+rel. change during last iteration : -1.68671e-07
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.5258
+variance of residuals (reduced chisquare) = WSSR/ndf   : 30.5345
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+b               = 2.37115e-06      +/- 2.728e-09    (0.115%)
+
+
+*******************************************************************************
+Tue Sep 27 13:13:23 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/heap_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: h(x)
+	h(x) = c * x * log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0324596164e+12   0.00e+00  1.44e+05    1.000000e+00
+   4 2.3396073737e-02  -2.71e-04  1.44e+01    1.347591e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0233961
+rel. change during last iteration : -2.71353e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0218511
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000477471
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 1.34759e-05      +/- 2.15e-08     (0.1596%)
+
+
+*******************************************************************************
+Tue Sep 27 13:17:15 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/counting_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a * (x+x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 4.2924515682e+10   0.00e+00  2.93e+04    1.000000e+00
+   4 1.8061273993e-03  -1.46e-04  2.93e+00    5.641465e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.00180613
+rel. change during last iteration : -1.46137e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00607122
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.68597e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 5.64146e-06      +/- 2.93e-08     (0.5194%)
+
+
+*******************************************************************************
+Tue Sep 27 13:17:15 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/bubble_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = b * (x**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b            
+   0 4.1041470994e+18   0.00e+00  2.87e+08    1.000000e+00
+   4 1.4961885419e+03  -1.69e-02  2.87e+04    2.371148e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1496.19
+rel. change during last iteration : -1.68671e-07
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.5258
+variance of residuals (reduced chisquare) = WSSR/ndf   : 30.5345
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+b               = 2.37115e-06      +/- 2.728e-09    (0.115%)
+
+
+*******************************************************************************
+Tue Sep 27 13:17:15 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/heap_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: h(x)
+	h(x) = c * x * log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0324596164e+12   0.00e+00  1.44e+05    1.000000e+00
+   4 2.3396073737e-02  -2.71e-04  1.44e+01    1.347591e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0233961
+rel. change during last iteration : -2.71353e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0218511
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000477471
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 1.34759e-05      +/- 2.15e-08     (0.1596%)
+
+
+*******************************************************************************
+Tue Sep 27 13:17:44 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/counting_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a * (x+x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 4.2924515682e+10   0.00e+00  2.93e+04    1.000000e+00
+   4 1.8061273993e-03  -1.46e-04  2.93e+00    5.641465e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.00180613
+rel. change during last iteration : -1.46137e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00607122
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.68597e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 5.64146e-06      +/- 2.93e-08     (0.5194%)
+
+
+*******************************************************************************
+Tue Sep 27 13:17:44 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/bubble_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = b * (x**2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b            
+   0 4.1041470994e+18   0.00e+00  2.87e+08    1.000000e+00
+   4 1.4961885419e+03  -1.69e-02  2.87e+04    2.371148e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1496.19
+rel. change during last iteration : -1.68671e-07
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.5258
+variance of residuals (reduced chisquare) = WSSR/ndf   : 30.5345
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+b               = 2.37115e-06      +/- 2.728e-09    (0.115%)
+
+
+*******************************************************************************
+Tue Sep 27 13:17:44 2022
+
+
+FIT:    data read from '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/heap_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: h(x)
+	h(x) = c * x * log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 1.0324596164e+12   0.00e+00  1.44e+05    1.000000e+00
+   4 2.3396073737e-02  -2.71e-04  1.44e+01    1.347591e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0233961
+rel. change during last iteration : -2.71353e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0218511
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000477471
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 1.34759e-05      +/- 2.15e-08     (0.1596%)
+
+
+*******************************************************************************
+Tue Sep 27 14:01:04 2022
+
+
+FIT:    data read from '/home/acki/Documents/Projet-final/bubble_sort/bubble_sort.csv'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = c * x ** 2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 4.1041483109e+18   0.00e+00  2.87e+08    1.000000e+00
+   4 3.2059865473e+04  -7.87e-04  2.87e+04    2.223551e-06
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 32059.9
+rel. change during last iteration : -7.87164e-09
+
+degrees of freedom    (FIT_NDF)                        : 49
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 25.579
+variance of residuals (reduced chisquare) = WSSR/ndf   : 654.283
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 2.22355e-06      +/- 1.263e-08    (0.5678%)

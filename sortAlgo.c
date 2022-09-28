@@ -155,7 +155,7 @@ int getMax(int *array, int size) {
 //Setter part
 void randomizeArray(int *array, int size) {
     for (int i = 0; i < size; i++) {
-        array[i] = rand() % 10000;
+        array[i] = rand() % 100000;
     }
 }
 
@@ -177,7 +177,7 @@ void randomizeArrayLog(int *array, int size) {
 
 void randomizeArrayLogN(int *array, int size) {
     for (int i = 0; i < size; i++) {
-        array[i] = rand() % ((size * (int) (log(size))) - size);
+        array[i] = rand() % (((size * (int) (log(size))) - size));
     }
 }
 
@@ -195,7 +195,7 @@ void randomizeArrayBest(int *array, int size) {
 
 void randomizeArrayNotBest(int *array, int size) {
     for (int i = 0; i < size; i++) {
-        array[i] = rand() % 1000000;
+        array[i] = rand() % 10000000;
     }
 }
 
@@ -210,7 +210,6 @@ void ascendingOrder(int *array, int size) {
         array[i] = i;
     }
 }
-
 
 //Execution part
 /**
@@ -249,7 +248,7 @@ void runFunction(sortAlgo sort, FILE *file, sortAlgo random) {
     int *arr;
     int n;
     double time_spent = 0.0;
-    int numberOfTests = 10;
+    int numberOfTests = 50;
     int maxArraySize = 50;
 
     for (int i = 1; i <= maxArraySize; i++) {
@@ -389,4 +388,93 @@ void writeFile(char *fileName, sortAlgo sort, sortAlgo random) {
     runFunction(sort, file, random);
 
     fclose(file);
+}
+
+void comparBubble() {
+    srand(time(NULL));
+
+    printf("-----------    TESTING  ALGORITHM     -------------\n");
+
+    //random
+    printf("Compare bubble Sort : \n");
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/checkBubbleBad/bubble_sort.csv", bubbleSort, descendingOrder);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/checkBubbleBad/heap_sort.csv", heapSort, descendingOrder);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/checkBubbleBad/counting_sort.csv", countingSort, descendingOrder);
+    printf("Compare bubble finished\n");
+}
+
+void comparHeapCounting() {
+    srand(time(NULL));
+
+    printf("-----------    TESTING  ALGORITHM     -------------\n");
+
+    //random
+    printf("Compare bubble Sort : \n");
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/checkHeapCounting/heap_sort.csv", heapSort, randomizeArray);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/checkHeapCounting/counting_sort.csv", countingSort, randomizeArray);
+    system("cd /home/acki/CLionProjects/sortingAlgo/Projet-final/checkHeapCounting && gnuplot *.gnu -persist");
+    printf("Compare bubble finished\n");
+}
+
+
+
+void compareAll() {
+    compareHeapCountingBest();
+    //compareHeapCountingNormal();
+    //compareCountingNotBestBubble();
+    //compareCountingWorstBubbleWorstBubbleNormal();
+}
+
+void compareHeapCountingBest() {
+    srand(time(NULL));
+
+    printf("-----------    TESTING  ALGORITHM     -------------\n");
+
+    //random
+    printf("Compare Sort 1 : \n");
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkHeapCountingBest/heap_sort.csv", heapSort, descendingOrder);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkHeapCountingBest/counting_sort.csv", countingSort, randomizeArrayBest);
+    system("cd /home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkHeapCountingBest && gnuplot *.gnu -persist");
+    printf("Compare 1 finished\n");
+}
+
+void compareHeapCountingNormal() {
+    srand(time(NULL));
+
+    printf("-----------    TESTING  ALGORITHM     -------------\n");
+
+    //random
+    printf("Compare Sort 2 : \n");
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkHeapCountingNormal/heap_sort.csv", heapSort, randomizeArray);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkHeapCountingNormal/counting_sort.csv", countingSort, randomizeArray);
+    system("cd /home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkHeapCountingNormal && gnuplot *.gnu -persist");
+    printf("Compare 2 finished\n");
+}
+
+void compareCountingNotBestBubble() {
+    srand(time(NULL));
+
+    printf("-----------    TESTING  ALGORITHM     -------------\n");
+
+    //random
+    printf("Compare Sort 3 : \n");
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingNotBestBubble/counting_sort.csv", countingSort, randomizeArrayNotBest);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingNotBestBubble/bubble_sort.csv", bubbleSortV2, randomizeArray);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingNotBestBubble/heap_sort.csv", heapSort, randomizeArray);
+    system("cd /home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingNotBestBubble && gnuplot *.gnu -persist");
+    printf("Compare 3 finished\n");
+}
+
+void compareCountingWorstBubbleWorstBubbleNormal() {
+    srand(time(NULL));
+
+    printf("-----------    TESTING  ALGORITHM     -------------\n");
+
+    //random
+    printf("Compare Sort 5 : \n");
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingWorstBubbleWorstBubbleNormal/counting_sort.csv", countingSort, randomizeArrayNotBest);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingWorstBubbleWorstBubbleNormal/bubble_sort_worst.csv", bubbleSort, descendingOrder);
+    writeFile("/home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingWorstBubbleWorstBubbleNormal/bubble_sort.csv", bubbleSort, randomizeArray);
+    system("cd /home/acki/CLionProjects/sortingAlgo/Projet-final/check/checkCountingWorstBubbleWorstBubbleNormal && gnuplot *.gnu -persist");
+    printf("Compare 5 finished\n");
 }

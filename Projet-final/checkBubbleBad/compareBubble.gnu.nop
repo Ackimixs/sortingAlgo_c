@@ -1,0 +1,52 @@
+# Set separator of data lines and grid to plot
+set datafile separator ";" 
+set grid
+
+# Set names of stuff
+set title "Execution Time vs Complexity Counting Sort O(N²)"
+set xlabel "number of elements"
+set ylabel "time in milliseconds"
+
+# Set line style, color, width, blabla
+set style line 1 linecolor rgb '#ff0000' linetype 1 linewidth 2
+set style line 2 linecolor rgb '#00ff00' linetype 1 linewidth 2
+set style line 3 linecolor rgb '#0000ff' linetype 1 linewidth 2
+set style line 4 linecolor rgb '#ffff00' linetype 1 linewidth 2
+
+### COUNTING :
+## prepare function
+g(x) = a * (x+x)
+
+## fit the function to data
+fit g(x) '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/counting_sort.csv' via a
+
+
+## BUBBLE :
+#### Prepare the function
+f(x) = b * (x**2)
+
+#### Fit the function to data 
+fit f(x) '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/bubble_sort.csv' via b
+
+
+## HEAP :
+#### Prepare the function
+h(x) = c * x * log(x)
+
+#### Fit the function to data
+fit h(x) '/home/acki/CLionProjects//sortingAlgo/Projet-final/checkBubbleBad/heap_sort.csv' via c
+
+
+
+# Save value of c to show in the function
+
+title_f(c) = sprintf("f(x) = c*(n+n), c = %f", a)
+title_g(c) = sprintf("g(x) = c*(n^2), c = %f", b)
+title_h(c) = sprintf("h(x) = c*n*log(n), c = %f", c)
+
+# Automatic scaling of axes
+set autoscale xy
+
+
+#### Plot both data and function (data with points)
+ plot f(x) title title_f(a) with lines linestyle 2, g(x) title title_g(b) with lines linestyle 3, h(x) title title_h(c) with lines linestyle 4

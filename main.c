@@ -3,7 +3,11 @@
 
 int main() {
 
-    runAll();
+    //runAll();
+
+    //comparHeapCounting();
+
+    compareAll();
 
     return 0;
 }
