@@ -480,14 +480,6 @@ void compareCountingWorstBubbleWorstBubbleNormal() {
 }
 
 
-
-
-
-
-void autoTesting() {
-
-}
-
 void writeAll() {
     srand(time(NULL));
 
